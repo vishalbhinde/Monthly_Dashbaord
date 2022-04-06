@@ -11,7 +11,7 @@ st.set_page_config(page_title="Lokyata Dashboard", page_icon="https://www.lokyat
 df = pd.read_csv('Lead_Loan_Summary.csv')
 
 # ---- SIDEBAR ----
-st.sidebar.header("Please Filter Client:")
+st.sidebar.header("Filter Client:")
 Client = st.sidebar.multiselect(
     "Select required Client:",
     options=df["Client"].unique(),
