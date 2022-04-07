@@ -25,7 +25,7 @@ df_selection = df.query(
 
 
 
-# st.title("Lokyata Dashboard")
+# st.title("Marketing Metrics")
 st.markdown("<h1 style='text-align: center; color: #00BFFF;'>Marketing Metrics</h1>", unsafe_allow_html=True)
 st.markdown("##")
 st.markdown("""---""")   
