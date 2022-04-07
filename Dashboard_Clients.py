@@ -46,8 +46,8 @@ Good_Num_Approved = str((round((df_selection['Num Approved'].pct_change())*100, 
 left_column, middle_column, right_column, last_column = st.columns(4)
 with left_column:
     st.subheader("Total Looks:")
-   #st.subheader(f"{Total_Looks}")
-    st.markdown(Total_Looks)
+    st.subheader(f"{Total_Looks}")
+    
 with middle_column:
     st.subheader("Total Approved:")
     st.subheader(f"{Total_Approved}")
