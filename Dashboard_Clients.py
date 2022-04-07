@@ -30,10 +30,10 @@ st.markdown("<h1 style='text-align: center; color: #00BFFF;'>Marketing Metrics</
 st.markdown("##")
 st.markdown("""---""")   
 
-Total_Looks = int(df_selection['Num Looks'].sum())
-Total_Approved = int(df_selection['Num Approved'].sum())
-Total_Funded = int(df_selection['Num Funded Loans'].sum())
-Total_Fpd = int(df_selection['Num Fpd'].sum())
+Total_Looks = "{:,}".format(int(df_selection['Num Looks'].sum()))
+Total_Approved = "{:,}".format(int(df_selection['Num Approved'].sum()))
+Total_Funded = "{:,}".format(int(df_selection['Num Funded Loans'].sum()))
+Total_Fpd = "{:,}".format(int(df_selection['Num Fpd'].sum()))
 
 Num_Months = str(df_selection.shape[0])
 Bad_FPD = str((df_selection['Fpd % Change'] > 0).sum())
@@ -47,7 +47,6 @@ left_column, middle_column, right_column, last_column = st.columns(4)
 with left_column:
     st.subheader("Total Looks:")
     st.subheader(f"{Total_Looks}")
-    
 with middle_column:
     st.subheader("Total Approved:")
     st.subheader(f"{Total_Approved}")
