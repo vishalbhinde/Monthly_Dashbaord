@@ -6,7 +6,7 @@ from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 
-st.set_page_config(page_title="Lokyata Dashboard", page_icon="https://www.lokyata.com/favicon.png", layout="wide")
+st.set_page_config(page_title="Marketing Metrics", page_icon="https://www.lokyata.com/favicon.png", layout="wide")
 
 df = pd.read_csv('Lead_Loan_Summary.csv')
 
